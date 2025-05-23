@@ -1,4 +1,4 @@
-UART Implementation on FGPA with System Verilog
+# UART Implementation on FGPA with System Verilog
 
 The Universal Asynchronous Receiver-Transmitter (UART) represents one of the most fundamental and widely adopted serial communication protocols. This implementation demonstrates a complete UART communication system designed for FPGA deployment. The UART protocol is simple, reliable, and has minimal hardware requirements, making it suitable for many applications.\\
 

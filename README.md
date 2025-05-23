@@ -1,0 +1,7 @@
+UART Implementation on FGPA with System Verilog
+
+The Universal Asynchronous Receiver-Transmitter (UART) represents one of the most fundamental and widely adopted serial communication protocols. This implementation demonstrates a complete UART communication system designed for FPGA deployment. The UART protocol is simple, reliable, and has minimal hardware requirements, making it suitable for many applications.\\
+
+The UART protocol operates as an asynchronous serial communication standard; so, it does not need a shared clock signal between communicating devices. Data transmission occurs through a predetermined frame structure consisting of a start bit, data payload, optional parity bit, and stop bit(s). Since the clock is not shared, a timing agreement between the transmitter and receiver should be there. It is typically achieved through standardized baud rates such as 9600, 38400, 115200, or higher frequencies, depending on the requirements.\\
+
+Protocol specifications for this implementation follow the standard 8N1 configuration: eight data bits, no parity bit, and one stop bit. Each transmitted frame begins with a start bit (logic low) that signals the beginning of data transmission, followed by eight data bits starting from the LSB, and concludes with a stop bit (logic high) that returns the communication line to its idle state. The idle condition maintains the transmission line at logic high, providing a clear reference for start bit detection. \\
